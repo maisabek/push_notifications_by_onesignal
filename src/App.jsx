@@ -3,17 +3,17 @@ import OneSignal from 'react-onesignal';
 import { useEffect } from 'react';
 
 function App() {
-  async function runOneSignal() {
-    await OneSignal.init({
-      appId: '2aa9bcf7-257d-4bd1-b89f-a0b16d71c9df',
-      allowLocalhostAsSecureOrigin: true
-    });
-    // OneSignal.Slidedown.promptPush();
-  }
+  // async function runOneSignal() {
+  //   await OneSignal.init({
+  //     appId: '2aa9bcf7-257d-4bd1-b89f-a0b16d71c9df',
+  //     allowLocalhostAsSecureOrigin: true
+  //   });
+  //   // OneSignal.Slidedown.promptPush();
+  // }
   useEffect(() => {
     // runOneSignal()
     OneSignal.init({
-      appId: '2aa9bcf7-257d-4bd1-b89f-a0b16d71c9df'
+      appId: '39f81043-635e-441e-80a3-ed09c8e4b81b'
     });
   }, [])
   // window.OneSignal = window.OneSignal || [];
